@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {Card} from 'react-bootstrap'
+import './App.css'
+
 class App extends Component {
   
 
@@ -25,17 +27,17 @@ componentWillUnmount(){
   render() {
     return (
       
-  <div className='App'>
+  <div className='App' style={{backgroundImage:`url("https://th.bing.com/th/id/OIP.ktx8R5LKdsxpmQJQFSComwHaF1?pid=ImgDet&rs=1")`}}>
 
       {this.state.show === true ? ( 
-        <Card style={{ width: '16rem', height:'25rem', backgroundColor:'burlywood', justifyContent: 'center' }}>
-        <Card.Img variant="top" src={this.state.person.imgSrc} alt='' height='200px' width='80px' style={{borderRadius:'200px', border:'1px blue solid'}} />
+        <Card className='cardd' style={{ width: '16rem', height:'25rem'}}>
+        <Card.Img variant="top" src={this.state.person.imgSrc} alt='' height='200px' width='80px' style={{borderRadius:'200px', border:'1px brown solid'}} />
          <Card.Body>
-         <Card.Title className='titre' style={{color:'brown',fontSize:'25px',fontFamily: 'Times New Roman'}}>{this.state.person.fullName}</Card.Title>
-        <Card.Text className='bioo'style={{fontSize:'16px',fontFamily: 'Times New Roman'}}>
+         <Card.Title className='titre'>{this.state.person.fullName}</Card.Title>
+        <Card.Text className='bioo'>
         {this.state.person.bio}
        </Card.Text>
-   <Card.Text className='prof' style={{fontSize:'16px',fontFamily: 'Times New Roman'}}>
+   <Card.Text className='prof'>
      {this.state.person.profession}
    </Card.Text>
  </Card.Body>
@@ -51,7 +53,7 @@ componentWillUnmount(){
          
          <div>
            <button 
-            className='btnn' style={{color:'white', borderRadius:'30px', backgroundColor:'blue', justifyContent:'center'}}
+            id='btnn'
             onClick={() => this.setState({ show: !this.show })}>ClickMe
 
 

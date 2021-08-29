@@ -1,6 +1,36 @@
-.App {
-  text-align: center;
-  margin: 50px 50px 50px 50px;
-  justify-content: center;
+.App{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  text-align: center!important;
+  justify-content: center!important;
+ 
+}
+.cardd{
+  background-color:burlywood !important;
+  justify-content: center !important;
+  align-items: center!important;
   
+}
+.titre{
+  font-size:25px !important;
+  font-family:'Times New Roman', Times, serif !important;
+  color:brown !important;
+
+}
+.bioo{
+  font-size:16px !important;
+  font-family:'Times New Roman', Times, serif !important;
+}
+.prof{
+  font-size:16px !important;
+  font-family:'Times New Roman', Times, serif!important;
+}
+#btnn{
+  color:brown!important; 
+  border-radius:30px!important; 
+  background-color:burlywood!important; 
+  justify-content:center!important;
 }
