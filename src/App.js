@@ -46,15 +46,13 @@ componentWillUnmount(){
         </div>
  </Card> 
 
-      ): (
-        " "
-      )}
+      ): <h1>" " </h1>}
          
          
          <div>
            <button 
             id='btnn'
-            onClick={() => this.setState({ show: !this.show })}>ClickMe
+            onClick={() => this.setState(this.state.show===true ?{...this.state,show:false}:{...this.state,show:true})}>ClickMe
 
 
            </button>
